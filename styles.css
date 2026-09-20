@@ -1,0 +1,126 @@
+/* Page font, colors, and spacing */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #f2edf7;
+    color: #3f334c;
+    line-height: 1.5;
+}
+
+/* Main heading */
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+/* Rounded card with a shadow */
+.card-container {
+    background-color: #fffdfb;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    border: 1px solid #d9cbe4;
+    box-shadow: 0 6px 16px rgba(83, 55, 105, 0.12);
+    text-align: center;
+}
+
+/* Greeting text */
+#greeting-message {
+    color: #694582;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: none;
+    overflow-wrap: anywhere;
+}
+
+/* Picture size and border */
+#greeting-image {
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #d9cbe4;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Zooms on hover */
+#greeting-image:hover {
+    transform: scale(1.05);
+}
+
+/* Space around the controls */
+.controls, .personalize {
+    margin: 25px 0;
+}
+
+/* Section headings */
+.controls h3, .personalize h3 {
+    color: #62506f;
+    margin-bottom: 15px;
+}
+
+/* Green buttons changed to plum */
+button {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #75528d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Darkens on hover */
+button:hover {
+    background-color: #593b70;
+}
+
+/* Name field */
+input[type="text"] {
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #3f334c;
+    border: 2px solid #c7b4d7;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Shows keyboard selection */
+button:focus-visible, input[type="text"]:focus-visible {
+    outline: 3px solid #694582;
+    outline-offset: 3px;
+}
+
+/* Fits smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .card-container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    #greeting-message {
+        font-size: 1.6em;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 10px);
+    }
+}

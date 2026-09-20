@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Page settings -->
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activity 3: Dynamic Greeting Card</title>
+
+    <!-- Loads the styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Activity 3: Dynamic Greeting Card</h1>
+
+    <!-- Greeting card -->
+    <div class="card-container">
+
+        <h2 id="greeting-message">Welcome!</h2>
+
+        <!-- Starting picture -->
+        <img id="greeting-image" src="https://static.vecteezy.com/system/resources/previews/011/976/274/non_2x/stick-figures-welcome-free-vector.jpg" 
+        alt="Welcome greeting">
+
+        <!-- Buttons run the greeting functions -->
+        <div class="controls">
+            <h3>Change Greeting:</h3>
+
+            <button onclick="setBirthdayGreeting()">Birthday</button>
+            <button onclick="setHolidayGreeting()">Holiday</button>
+            <button onclick="setThankYouGreeting()">Thank You</button>
+            <button onclick="setRandomGreeting()">Random</button>
+        </div>
+
+        <!-- Adds the entered name -->
+        <div class="personalize">
+            <h3>Personalize:</h3>
+
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="personalizeGreeting()">Add Name</button>
+        </div>
+    </div>
+
+    <!-- Loads JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
